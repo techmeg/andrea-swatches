@@ -1,0 +1,297 @@
+* {
+  /* border: 1px solid pink; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: left;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* nav */
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  margin-left: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav-item > .active {
+  border-bottom: 3px solid;
+  color: var(--col-4);
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* color strip */
+#color-strip {
+  display: flex;
+}
+
+#color-strip > div {
+  aspect-ratio: 2;
+  height: 50px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.f,
+.i {
+  color: #ffffff;
+}
+
+.f {
+  background-color: var(--col-1);
+}
+
+.g {
+  background-color: var(--col-2);
+}
+
+.h {
+  background-color: var(--col-3);
+}
+
+.i {
+  background-color: var(--col-4);
+}
+
+.j {
+  background-color: var(--col-5);
+}
+
+.k {
+  background-color: var(--background);
+}
+
+.quilt {
+  transform: rotate(45deg);
+}
+
+/* quilte area */
+.row {
+  display: flex;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-270 {
+  transform: rotate(270deg);
+}
+
+.blockA,
+.blockB,
+.blockC,
+.blockD,
+.blockA1,
+.spacer {
+  /* border: 1px solid pink; */
+  width: 80px;
+  height: 80px;
+}
+
+.blockA,
+.blockB,
+.blockA1,
+.blockD {
+  display: grid;
+  grid-template: repeat(8, 10px)/repeat(8, 10px);
+}
+
+.spacer {
+  background-color: inherit;
+}
+
+.a-top {
+  background-color: var(--background);
+  grid-row: span 1;
+  grid-column: 1/-1;
+  height: 10px;
+}
+
+.a2,
+.a2x {
+  background-color: var(--background);
+  height: 10px;
+}
+
+.a2 {
+  grid-column: span 1;
+}
+
+.a2x {
+  grid-column: span 2;
+}
+
+.a3 {
+  height: 10px;
+  width: 10px;
+  background: var(--col-5);
+}
+
+.a3d {
+  background: var(--col-4);
+}
+
+.a-end {
+  background-color: var(--background);
+  grid-column: 1/-2;
+  grid-row: 8;
+}
+
+.b-top {
+  grid-row: 1;
+  grid-column: 1/-1;
+  height: 10px;
+  background: var(--col-3);
+}
+
+.b2,
+.b3,
+.b4,
+.b-d,
+.b-l,
+.b-trans {
+  height: 10px;
+}
+
+.b2 {
+  background-color: var(--background);
+  grid-column: 1/span 7;
+}
+
+.b3 {
+  grid-column: 1/span 6;
+  background: var(--col-3);
+}
+
+.b4 {
+  background-color: var(--background);
+  grid-column: 1/span 5;
+}
+
+.b5 {
+  height: 40px;
+  grid-column: 1/span 4;
+  background: var(--col-1);
+}
+
+.b-l,
+.b-d {
+  width: 10px;
+}
+
+.b-l {
+  background-color: var(--background);
+}
+
+.b-d {
+  background: var(--col-3);
+}
+
+.b-trans {
+  background: transparent;
+  grid-column: 1/span 4;
+}
+
+.blockC {
+  background-color: var(--background);
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.clip {
+  clip-path: polygon(0 0, 100% 100%, 0 100%, 0 0);
+}
+
+.clip-length {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 100% 0);
+}
+
+.clip-4 {
+  clip-path: polygon(0 100%, 50% 50%, 100% 100%, 0 100%);
+}
+
+.d1,
+.d4 {
+  background-color: var(--background);
+  height: 10px;
+}
+
+.d4 {
+  grid-column: 3/span 4;
+}
+
+.d3 {
+  grid-row: span 2;
+  grid-column: 3/span 4;
+  background: var(--background);
+}
+
+.d3-inner {
+  clip-path: polygon(33% 0, 100% 0, 100% 100%, 0 100%);
+  height: 100%;
+  width: 100%;
+  background-color: var(--col-2);
+}
+
+.as {
+  background-color: var(--background);
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.p10 {
+  padding-top: 10px;
+}
+
+:root {
+  /* --col-1: #c3561d; Pumpkin */
+  /* --col-1: #fbccb7 Creamsicle; */
+  --col-1: #fe916b;
+  /* --col-2: #e72815; Chili */
+  /* --col-2: #fa6e27; Carrot */
+  /* --col-2: #fb7232 Tangerine; */
+  --col-2: #f34b3d;
+  --col-3: #009cc3;
+  --col-4: #1c3a6f;
+  --col-5: white;
+  /* --background: #c4f0eb; Spa */
+  --background: #ddf0ef;
+}
+
+/*# sourceMappingURL=style-hs4.css.map */
