@@ -1,0 +1,22 @@
+{
+  "name": "andrea-swatches",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nav.js",
+  "scripts": {
+    "sass:watch": "sass style-hs1.scss style-hs1.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techmeg/andrea-swatches.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techmeg/andrea-swatches/issues"
+  },
+  "homepage": "https://github.com/techmeg/andrea-swatches#readme",
+  "dependencies": {
+    "sass": "^1.49.7"
+  }
+}
